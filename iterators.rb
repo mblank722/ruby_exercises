@@ -4,6 +4,7 @@ arr2 = [1,2,3,4,5,6,7,8,9]
 
 print "arr1.any?{'a'}: " ;print arr1.any?{'a'}; puts
 
+print "testing
 
 # .any? {|obj| block} -> true or false
 # e.g.
