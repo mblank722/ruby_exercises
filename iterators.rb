@@ -48,7 +48,6 @@ print [1,2,2,2,3,4].reject{|i| i==2}
 print "\n"
 # .find_all {|obj| block} or .select {|obj| block} ; returns an array containing all elements of enum for which block is not false
 ##
-asdff
 print "2.upto(7){|i| print i, " "}"
 print " detected: "
  4.upto(7){|i| print i, " "}
