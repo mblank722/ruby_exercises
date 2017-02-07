@@ -30,7 +30,7 @@ print "[1,2,3].map{|num| puts num*num }: "
 print "[1,2,2,2,3,4].detect{ 2 }"
 print "detected in index :"
 print [1,2,2,2,3,4].detect{3}
-print "\n
+print "\n"
 
 # .detect / .find -> enumerator; returns the first for which block is not false.
 #
