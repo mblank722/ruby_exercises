@@ -52,5 +52,5 @@ print "\n"
 print "2.upto(7){|i| print i, " "}"
 print " detected: "
  4.upto(7){|i| print i, " "}
-print "\n
+print "\n"
 # # .upto(limit) -> iterates block up to the int number
