@@ -4,8 +4,6 @@ arr2 = [1,2,3,4,5,6,7,8,9]
 
 print "arr1.any?{'a'}: " ;print arr1.any?{'a'}; puts
 
-print "testing
-
 # .any? {|obj| block} -> true or false
 # e.g.
 #
@@ -54,5 +52,5 @@ print "\n"
 print "2.upto(7){|i| print i, " "}"
 print " detected: "
  4.upto(7){|i| print i, " "}
-print "\n"
+print "\n
 # # .upto(limit) -> iterates block up to the int number
