@@ -1,4 +1,4 @@
-arr = ["a", "b", "c", "d", "e"]
+arr = ["f","a", "b", "q", "c", "d", "e"]
 # puts arr.include?("a")
 # puts arr.include?("z")
 
@@ -12,7 +12,13 @@ arr = ["a", "b", "c", "d", "e"]
 # puts (1.5..6).last
 
 
-#first returns first value in range 
+#first returns frist value in range
 # puts (1.5..6).first
 # puts (1...5).first
 # puts (1..5).first
+
+# last returns last value in range
+# puts arr.max
+
+# min returns smallest value in range
+# puts arr.min
