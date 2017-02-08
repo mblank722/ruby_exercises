@@ -11,7 +11,7 @@ puts "length arr1:  #{arr1.length()}"
 
 puts "sort arr1: #{arr1.sort()}"
 
-puts "shuffle arr1 #{arr1.shuffle()}"
+puts "shuffle arr1 #{arr1.shuffle()}
 
 puts "join arr1 #{arr1.join(",")}"
 
