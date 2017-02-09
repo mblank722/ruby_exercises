@@ -64,25 +64,36 @@
 # no_neg_nbrs(x)
 # print "x after: ",  x , "\n"
 
-#Max, Min, and Average
-x=[1,-2,3,-4,5,-6,7]
+# #Max, Min, and Average
+# x=[1,-2,3,-4,5,-6,7]
+#
+# def min_max_mean(arr)
+#     i=0
+#     min=arr[i]
+#     max=arr[i]
+#     sum=0.0
+#     mean=0.0
+#     while i < arr.length do
+#         if min > arr[i]
+#             min = arr[i]
+#         end
+#         if max < arr[i]
+#             max = arr[i]
+#         end
+#         sum = sum + arr[i]
+#         i = i+1
+#     end
+#     print "min: ", min , "  max: ", max, "  mean: ", sum/arr.length, "\n "
+# end
+# min_max_mean(x)
 
-def min_max_mean(arr)
-    i=0
-    min=arr[i]
-    max=arr[i]
-    sum=0.0
-    mean=0.0
-    while i < arr.length do
-        if min > arr[i]
-            min = arr[i]
-        end
-        if max < arr[i]
-            max = arr[i]
-        end
-        sum = sum + arr[i]
-        i = i+1
-    end
-    print "min: ", min , "  max: ", max, "  mean: ", sum/arr.length, "\n "
+#Shifting the values in the array
+x=[1, 5, 10, 7, -2]
+
+i=0
+while i <= x.length-1
+    x[i] = x[i+1]
+    i=i+1
 end
-min_max_mean(x)
+x[i-1]=0
+print x, "\n"
