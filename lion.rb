@@ -28,16 +28,14 @@ class Lion < Mammal
     self
   end
   def eat_humans
-    @health = @health - 20
+    @health = @health + 20
     self
   end
 end
 
-cat=Mammal.new
-cat.display_health
-lion1.Lion.new
+lion1=Lion.new
 lion1.display_health
-lion1.
+lion1.attack_town.attack_town.attack_town.eat_humans.eat_humans.fly.fly.display_health
 
   # instance = SomeClass.new
   # instance.another_method # => "a"
