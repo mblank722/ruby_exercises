@@ -9,15 +9,25 @@ class MathDojo
 
     def add(*addends)
         i = 0
-
+        sum = 0
         for i in addends
-            @result = @result + i;
+            sum = sum + i
         end
-  
+        @result = @result + sum
         print "result: ", @result, "\n"
         return self
     end
 
+    def subtract(*subs)
+        i = 0
+        sum= 0
+        for i in subs
+            sum = sum + i
+        end
+        @result=@result - sum
+        print "result: ", @result, "\n"
+        return self
+    end
 end
-MathDojo.new.add(1,2,3,4).add(1)
+MathDojo.new.add(1,2,3,4).add(1,2).subtract(1,2)
  # puts MathDojo.new.add(1,2,3,4).add 1
