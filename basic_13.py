@@ -96,4 +96,4 @@ while i <= x.length-1
     i=i+1
 end
 x[i-1]=0
-print x, "\n"
+print x, "\n
