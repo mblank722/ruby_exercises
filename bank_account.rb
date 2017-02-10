@@ -34,6 +34,9 @@ class BankAccount
 
   public
   @@acct_cnt = 0
+  @c_bal = 0.0
+  @s_bal = 0.0
+
 
   def self.get_acct_cnt
     return @@acct_cnt
@@ -62,27 +65,31 @@ class BankAccount
   def deposit (c_dep, s_dep)
     @c_bal += c_dep
     @s_bal += s_dep
+    return self
   end
 
   def withdraw (c_with, s_with)
-    if (@c_bal+@S_bal) < (c_with+s_with)
+    if (@c_bal + @s_bal) < (c_with + s_with)
       return "you're hosed!"
     end
     @c_bal -= c_with
-    @s_bal += s_with
+    @s_bal -= s_with
+    return self
   end
 
   def account_information
-    rate=10.0
-    rate=@interest_rate
-    print "rate: ", @interest_rate, "\n"
+    print "*****************************","\n"
     print 'account: ', @acct_nbr, "\n"
+    print "rate: ", @interest_rate, "\n"
     print 'savings:  $', @s_bal, "\n"
     print 'checking:  $', @c_bal, " \n"
-    return
+    print "*****************************","\n"
+
+    return self
   end
 
 end
-puts "hello"
-acct1=BankAccount.new 1,1
+
+acct1=BankAccount.new 1.0,1.0
 acct1.account_information
+acct1.deposit(10000,2000).account_information.withdraw(1000.0,1000.0).account_information
