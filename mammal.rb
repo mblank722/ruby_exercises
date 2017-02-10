@@ -11,7 +11,7 @@
 
 
 class Mammal
-  def initialize()
+  def initialize(
     @health=150
   end
   def display_health
